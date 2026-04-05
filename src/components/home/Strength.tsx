@@ -28,14 +28,23 @@ const STRENGTHS = [
 
 export default function Strength() {
 	return (
-		<section className="bg-[#F8FAFC] py-24">
-			<div className="max-w-6xl mx-auto px-6 text-center">
+		<section className="relative  bg-gradient-to-r from-[#000040] to-[#000020] py-24 overflow-hidden">
+			{/* ✨ Background Glow */}
+			<div className="absolute inset-0 pointer-events-none">
+				<div className="absolute top-10 left-10 w-[250px] h-[250px] bg-[#E0A000]/10 blur-[120px] rounded-full" />
+				<div className="absolute bottom-10 right-10 w-[250px] h-[250px] bg-[#E0A000]/10 blur-[120px] rounded-full" />
+			</div>
+
+			<div className="relative max-w-6xl mx-auto px-6 text-center">
 				{/* Title */}
-				<h2 className="text-3xl md:text-4xl font-bold text-[#0F172A]">
-					Our <span className="text-[#D4AF37]">Strengths</span>
+				<h2 className="text-3xl md:text-4xl font-bold text-white">
+					Our{" "}
+					<span className="bg-gradient-to-r from-[#E0A000] to-[#F2C94C] bg-clip-text text-transparent">
+						Strengths
+					</span>
 				</h2>
 
-				<p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+				<p className="mt-4 text-gray-400 max-w-2xl mx-auto">
 					Built on trust, experience, and strong industry connections.
 				</p>
 
@@ -50,24 +59,29 @@ export default function Strength() {
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								transition={{ delay: i * 0.1 }}
-								className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-left">
+								className="group relative p-8 rounded-2xl border border-white/10 bg-[#0A1A24]/40 backdrop-blur-md text-left transition hover:border-[#E0A000]/30">
+								{/* ✨ Hover Glow */}
+								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
+									<div className="absolute inset-0 bg-[#E0A000]/10 blur-[80px] rounded-2xl" />
+								</div>
+
 								{/* Icon */}
-								<div className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#0F172A] text-[#D4AF37] mb-5 group-hover:scale-110 transition">
+								<div className="relative w-12 h-12 flex items-center justify-center rounded-lg bg-[#0A1A24] text-[#E0A000] mb-5 group-hover:scale-110 transition shadow-[0_0_15px_rgba(224,160,0,0.3)]">
 									<Icon size={22} />
 								</div>
 
 								{/* Title */}
-								<h3 className="text-lg font-semibold text-[#0F172A] group-hover:text-[#D4AF37] transition">
+								<h3 className="text-lg font-semibold text-white group-hover:text-[#E0A000] transition">
 									{item.title}
 								</h3>
 
 								{/* Description */}
-								<p className="mt-3 text-gray-600 text-sm leading-relaxed">
+								<p className="mt-3 text-gray-400 text-sm leading-relaxed">
 									{item.desc}
 								</p>
 
 								{/* Accent Line */}
-								<div className="mt-5 w-10 h-[2px] bg-[#D4AF37] group-hover:w-16 transition-all duration-300" />
+								<div className="mt-5 w-10 h-[2px] bg-[#E0A000] group-hover:w-16 transition-all duration-300 shadow-[0_0_10px_#E0A000]" />
 							</motion.div>
 						);
 					})}

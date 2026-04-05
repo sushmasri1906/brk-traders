@@ -18,9 +18,7 @@ export default function Navbar() {
 	const [open, setOpen] = useState(false);
 
 	useEffect(() => {
-		const handleScroll = () => {
-			setScrolled(window.scrollY > 40);
-		};
+		const handleScroll = () => setScrolled(window.scrollY > 40);
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
@@ -28,28 +26,40 @@ export default function Navbar() {
 	return (
 		<header
 			className={`fixed w-full z-50 transition-all duration-300 ${
-				scrolled ? "bg-[#0B1D26] shadow-lg" : "bg-transparent"
+				scrolled
+					? "bg-[#000020]/90 backdrop-blur-xl border-b border-[#E0A000]/20 shadow-lg"
+					: "bg-transparent"
 			}`}>
 			<div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 				{/* Logo */}
 				<Link href="/" className="text-xl font-semibold tracking-wide">
-					<span className="text-[#D4AF37]">BRK</span>{" "}
-					<span className={`${scrolled ? "text-white" : "text-white"}`}>
-						TRADERS
-					</span>
+					<span className="text-[#E0A000] font-bold">BRK</span>{" "}
+					<span className="text-white">TRADERS</span>
 				</Link>
 
 				{/* Desktop Menu */}
-				<nav className="hidden md:flex items-center gap-8">
+				<nav className="hidden md:flex items-center gap-10">
 					{NAV_ITEMS.map((item) => (
 						<Link
 							key={item.name}
 							href={item.href}
-							className="relative text-sm font-medium text-white hover:text-[#D4AF37] transition">
+							className="relative group text-sm font-medium text-gray-300 hover:text-white transition">
 							{item.name}
-							<span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#D4AF37] transition-all duration-300 hover:w-full"></span>
+
+							{/* Gold underline */}
+							<span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#E0A000] to-[#E08000] transition-all duration-300 group-hover:w-full"></span>
 						</Link>
 					))}
+
+					{/* CTA */}
+					<Link
+						href="/contact"
+						className="ml-4 px-5 py-2 rounded-lg 
+						bg-gradient-to-r from-[#E0A000] to-[#E08000] 
+						text-[#000020] font-semibold 
+						hover:opacity-90 transition shadow-md">
+						Get Started
+					</Link>
 				</nav>
 
 				{/* Mobile Toggle */}
@@ -64,19 +74,30 @@ export default function Navbar() {
 			<AnimatePresence>
 				{open && (
 					<motion.div
-						initial={{ y: -20, opacity: 0 }}
-						animate={{ y: 0, opacity: 1 }}
-						exit={{ y: -20, opacity: 0 }}
-						className="md:hidden bg-white px-6 py-6 space-y-4">
+						initial={{ opacity: 0, y: -20 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: -20 }}
+						className="md:hidden bg-[#000020] px-6 py-6 space-y-5 border-t border-[#E0A000]/20">
 						{NAV_ITEMS.map((item) => (
 							<Link
 								key={item.name}
 								href={item.href}
 								onClick={() => setOpen(false)}
-								className="block text-lg font-medium text-[#0F172A] hover:text-[#D4AF37]">
+								className="block text-lg font-medium text-gray-300 hover:text-[#E0A000] transition">
 								{item.name}
 							</Link>
 						))}
+
+						{/* Mobile CTA */}
+						<Link
+							href="/contact"
+							onClick={() => setOpen(false)}
+							className="block text-center mt-4 px-5 py-3 rounded-lg 
+							bg-gradient-to-r from-[#E0A000] to-[#E08000] 
+							text-[#000020] font-semibold 
+							hover:opacity-90 transition">
+							Get Started
+						</Link>
 					</motion.div>
 				)}
 			</AnimatePresence>

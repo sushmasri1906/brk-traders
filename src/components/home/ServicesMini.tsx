@@ -23,14 +23,23 @@ const SERVICES = [
 
 export default function ServicesHighlight() {
 	return (
-		<section className="bg-[#F8FAFC] py-20">
-			<div className="max-w-7xl mx-auto px-6">
+		<section className="relative  bg-gradient-to-r from-[#000040] to-[#000020] py-20 overflow-hidden">
+			{/* ✨ Background Glow */}
+			<div className="absolute inset-0 pointer-events-none">
+				<div className="absolute top-20 left-20 w-[300px] h-[300px] bg-[#E0A000]/10 blur-[120px] rounded-full" />
+				<div className="absolute bottom-20 right-20 w-[300px] h-[300px] bg-[#E0A000]/10 blur-[120px] rounded-full" />
+			</div>
+
+			<div className="relative max-w-7xl mx-auto px-6">
 				{/* Title */}
 				<div className="text-center">
-					<h2 className="text-3xl md:text-4xl font-bold text-[#0F172A]">
-						What We <span className="text-[#D4AF37]">Do</span>
+					<h2 className="text-3xl md:text-4xl font-bold text-white">
+						What We{" "}
+						<span className="bg-gradient-to-r from-[#E0A000] to-[#F2C94C] bg-clip-text text-transparent">
+							Do
+						</span>
 					</h2>
-					<p className="mt-4 text-gray-600">
+					<p className="mt-4 text-gray-400">
 						Delivering reliable trade solutions across industries
 					</p>
 				</div>
@@ -43,7 +52,7 @@ export default function ServicesHighlight() {
 							initial={{ opacity: 0, y: 40 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ delay: i * 0.15 }}
-							className="group relative h-[400px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+							className="group relative h-[420px] rounded-2xl overflow-hidden cursor-pointer border border-white/10">
 							{/* Image */}
 							<img
 								src={service.img}
@@ -51,19 +60,28 @@ export default function ServicesHighlight() {
 								className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
 							/>
 
-							{/* Overlay */}
-							<div className="absolute inset-0 bg-gradient-to-t from-[#0B1D26]/90 via-[#0B1D26]/40 to-transparent" />
+							{/* Dark Overlay */}
+							<div className="absolute inset-0 bg-gradient-to-t from-[#08131B]/95 via-[#08131B]/50 to-transparent" />
+
+							{/* ✨ Gold Glow on Hover */}
+							<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
+								<div className="absolute inset-0 bg-[#E0A000]/10 blur-[80px]" />
+							</div>
 
 							{/* Content */}
 							<div className="absolute bottom-0 p-6 text-white">
 								<h3 className="text-xl font-semibold">{service.title}</h3>
-								<p className="mt-2 text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition duration-300">
+
+								<p className="mt-2 text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition duration-300">
 									{service.desc}
 								</p>
 
-								{/* Underline */}
-								<div className="mt-3 w-10 h-[2px] bg-[#D4AF37] group-hover:w-20 transition-all duration-300" />
+								{/* Gold underline */}
+								<div className="mt-3 w-10 h-[2px] bg-[#E0A000] group-hover:w-20 transition-all duration-300 shadow-[0_0_10px_#E0A000]" />
 							</div>
+
+							{/* 🔥 Border Glow */}
+							<div className="absolute inset-0 rounded-2xl border border-[#E0A000]/0 group-hover:border-[#E0A000]/40 transition" />
 						</motion.div>
 					))}
 				</div>
@@ -71,8 +89,9 @@ export default function ServicesHighlight() {
 				{/* CTA */}
 				<div className="mt-12 text-center">
 					<Link href="/services">
-						<button className="bg-[#0B1D26] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#1F3A5F] transition">
-							View All Services
+						<button className="relative px-8 py-3 rounded-md font-semibold text-black bg-[#E0A000] overflow-hidden hover:scale-105 transition">
+							<span className="relative z-10">View All Services</span>
+							<div className="absolute inset-0 bg-[#E0A000] blur-md opacity-40" />
 						</button>
 					</Link>
 				</div>
