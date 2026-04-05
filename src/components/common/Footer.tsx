@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { FiMapPin, FiMail, FiPhone, FiGlobe } from "react-icons/fi";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -14,9 +14,9 @@ export default function Footer() {
 						<span className="text-[#D4AF37]">BRK</span> TRADERS
 					</h2>
 					<p className="mt-4 text-sm leading-relaxed">
-						Delivering reliable trading, sourcing, and brokerage solutions
-						across industries with a focus on transparency and long-term
-						partnerships.
+						BRK Traders is a partnership firm engaged in trading, brokerage,
+						sourcing, and business facilitation across multiple industries,
+						delivering reliable solutions in domestic and international markets.
 					</p>
 				</div>
 
@@ -44,10 +44,11 @@ export default function Footer() {
 					<ul className="space-y-2 text-sm">
 						{[
 							"Trading Services",
-							"Brokerage",
-							"Sourcing",
+							"Brokerage & Agency",
+							"Sourcing & Procurement",
 							"Import & Export",
-							"Distribution",
+							"Distribution & Dealership",
+							"Business Facilitation",
 						].map((item, i) => (
 							<li
 								key={i}
@@ -58,23 +59,74 @@ export default function Footer() {
 					</ul>
 				</div>
 
-				{/* Contact */}
+				{/* Contact (Scrollable) */}
 				<div>
 					<h3 className="text-white font-semibold mb-4">Contact</h3>
-					<ul className="space-y-3 text-sm">
-						<li className="flex items-center gap-2">
-							<FiMapPin className="text-[#D4AF37]" />
-							Hyderabad, India
-						</li>
-						<li className="flex items-center gap-2">
-							<FiMail className="text-[#D4AF37]" />
-							info@brktraders.com
-						</li>
-						<li className="flex items-center gap-2">
-							<FiPhone className="text-[#D4AF37]" />
-							+91 XXXXX XXXXX
-						</li>
-					</ul>
+
+					<div className="max-h-[220px] overflow-y-auto pr-2 custom-scroll">
+						<ul className="space-y-3 text-sm">
+							{/* Address */}
+							<li className="flex items-start gap-2">
+								<FiMapPin className="text-[#D4AF37] mt-1" />
+								<span>
+									H.No 7-1-414/20-21, F.No. 203 <br />
+									Koushik Sai Rama Residency, <br />
+									Srinivas Colony-East, Beside ICICI Bank Lane, <br />
+									Sanjeev Reddy Nagar, Hyderabad 500038, Telangana.
+								</span>
+							</li>
+
+							{/* Phones */}
+							<li className="flex items-start gap-2">
+								<FiPhone className="text-[#D4AF37] mt-1" />
+								<div>
+									<a
+										href="tel:9985201444"
+										className="hover:text-[#D4AF37] block">
+										+91 9985201444
+									</a>
+									<a
+										href="tel:9052143888"
+										className="hover:text-[#D4AF37] block">
+										+91 9052143888
+									</a>
+								</div>
+							</li>
+
+							{/* Emails */}
+							<li className="flex items-start gap-2">
+								<FiMail className="text-[#D4AF37] mt-1" />
+								<div>
+									<a
+										href="mailto:rajesh@brktraders.com"
+										className="hover:text-[#D4AF37] block">
+										rajesh@brktraders.com
+									</a>
+									<a
+										href="mailto:karthik@brktraders.com"
+										className="hover:text-[#D4AF37] block">
+										karthik@brktraders.com
+									</a>
+									<a
+										href="mailto:info@brktraders.com"
+										className="hover:text-[#D4AF37] block">
+										info@brktraders.com
+									</a>
+								</div>
+							</li>
+
+							{/* Website */}
+							<li className="flex items-center gap-2">
+								<FiGlobe className="text-[#D4AF37]" />
+								<a
+									href="https://www.brktraders.com"
+									target="_blank"
+									className="hover:text-[#D4AF37]">
+									www.brktraders.com
+								</a>
+							</li>
+						</ul>
+					</div>
 
 					{/* Social Icons */}
 					<div className="flex gap-3 mt-5">
