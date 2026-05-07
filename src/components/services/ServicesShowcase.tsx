@@ -7,13 +7,13 @@ const SERVICES = [
 	{
 		title: "Trading Services",
 		desc: "Wide-ranging trade of goods, commodities, and merchandise across multiple industries.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164135/1745573173_3119d9018925501f07d4_xaybij_bviwns.jpg",
 		featured: true,
 	},
 	{
 		title: "Brokerage & Commission Agency",
 		desc: "Connecting buyers and sellers with seamless and transparent transactions.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164792/ZcfF7Cze6LNqs2ebxHNN_aRdsIvYqaEA2ibfXjaH03p5feOG_cvYHklFE2TAdTVNbNDXKZvMcple5l-KXxiP-p6Vyq1FuiowJNShsLAVvKMQNzO51ZFeHVPiAHXTYPt_BWXN4ySu39RuaxKKpa4bw0kvRzK5zycmCYXRwN12afAb6UIFUfcXxMPHq7ITuSGb_aakhfg.jpg",
 	},
 	{
 		title: "Sourcing & Procurement",
@@ -23,17 +23,17 @@ const SERVICES = [
 	{
 		title: "Import & Export Support",
 		desc: "Efficient coordination for international trade operations.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164041/imports-and-exports_sp1v56_afogzf.jpg",
 	},
 	{
 		title: "Distribution & Dealership",
 		desc: "Expanding market reach through strong distribution networks.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164863/HsQ4gBoWL5SLwnvOltVlMSNqnlkOY88Bk1wZQUC0AZRTR6TnRklaH42DE9cAcxU74U3qbuCb9X6SebY_qaKtmnbMAOoJwOUsO0TI_-8ZuVvM4eJ8XcTcaDWf9ZC5Z5rKhDB_2kNhbJcweyvVrqhgrVnGgFLso-gl_8_Bn0cBdNu9iu1uAhHsTxQD6NnRDDkt_yxnjsd.jpg",
 	},
 	{
 		title: "Business Facilitation",
 		desc: "End-to-end support including negotiation and execution.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164913/NHRAdFCEGRPwCBH3Kn5Lb0fS6oFrIKegC-BZnbsBcxlXuUtT9jptlmk6DMUdLDzkZiSnG1VbZAFTaCgyR6-qNm6cfw9xUrXLmLcIKZPioGbKply5xae93quPrFFSvVF1ZZ5eZaPw4EI5sJ-wZsrN92b4afPygFVzh06Q2zT8jOlX1blDRok3pWD5sIFghC53_yldkop.jpg",
 	},
 ];
 

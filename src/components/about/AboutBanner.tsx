@@ -6,7 +6,7 @@ export default function AboutBanner() {
 			subtitle="About Us"
 			title="About BRK Traders"
 			description="Building trusted trade relationships through expertise, transparency, and seamless execution across domestic and international markets."
-			image="https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775211958/premium_photo-1661964050170-b9e54345217d_tbmw25.jpg"
+			image="https://res.cloudinary.com/drhzztyoc/image/upload/v1778163704/premium_photo-1661964050170-b9e54345217d_tbmw25_qeivwj.jpg"
 			primaryBtn={{
 				label: "Contact Us",
 				href: "/contact",

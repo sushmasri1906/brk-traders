@@ -7,18 +7,18 @@ const INDUSTRIES = [
 	{
 		title: "Manufacturing",
 		desc: "Supporting production, supply chains, and industrial operations.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775212804/imports-and-exports_sp1v56.jpg",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164976/QQOW-4ie3dE825wL5Hw8ufcsAqJbNG01FuRAVpbM0rANe-hEy7LONJOAdqSeqbRFOxlqJEt7YlEowIavYK-IbELOcHGmhMm5FDNRXw7PqrxlUtkz-_vlxpDIE3-TTWPsgXYZFIUUm3q2I63LUwy2qvwZdXcVUFke97gx7KrXeh0wZYdue-MqrXGdNqct8L5o_gt1hxi.jpg",
 		featured: true,
 	},
 	{
 		title: "Retail",
 		desc: "Enhancing sourcing and distribution for retail businesses.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775212804/imports-and-exports_sp1v56.jpg",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778165029/MSMCZItnxW5sqaBDUsFLS-T6QYI9KmHYvOC9746mfPBL1ACX3BhLXU_Sv7CxdugcEh8emvfuX_gjR1CGkYrpBhxdCk_hBxmqsVXx1--SOWf_Xff_agNTqE9yG7XXCAotKLipzlAkEruCe7Bzl0sONgu53wBEuKspqDycJ0DVey_GoWH2gC6pKf9eVEze3fsi_rjlrqv.jpg",
 	},
 	{
 		title: "Construction",
 		desc: "Reliable material sourcing and project support.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775212804/imports-and-exports_sp1v56.jpg",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778165172/r0wmrOJCGP-QQkFiwFpyzE-_MMA0FMdUb76EH9U4T0YL3AZwnQqWa8PaH0vaut5TC0X4RRvVdGnKAyNySKIVstoN5jVl6l8egWMQ4-d43i_uUtXvUSxnP2K0MSvB9j6oSF5O30RYwzU143GOMnxCcMRAcaJeDENsNzHQPH9ERUHkec9ONwMlN-NZORAuTxJ8_yqofr9.jpg",
 	},
 	{
 		title: "Import / Export",
@@ -28,7 +28,7 @@ const INDUSTRIES = [
 	{
 		title: "Wholesale Markets",
 		desc: "Efficient bulk trading and distribution networks.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775212804/imports-and-exports_sp1v56.jpg",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778165239/M6kzu39qazj7vI3tx0FaXzWzHmTClxsmYLlU1Dxf-rTRDU2AoX42yYIA_8FeobmiBATAuqGpojvR9rRXTDSuKPHQMIiPgVgB3TaqqHW9GibZnQ-yQ-xpKhCcNeb3p9LDVs3MNyVkqKQwwTEC4FCPjj0J6_g7qfHvE7pyQikXS11FmJ3AYdhiaGkmUSygB_hk_r0g20a.jpg",
 	},
 ];
 

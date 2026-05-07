@@ -74,7 +74,7 @@ export default function AboutMini() {
 					{/* Image Card */}
 					<div className="rounded-2xl overflow-hidden border border-[#E0A000]/20 shadow-[0_0_40px_rgba(224,160,0,0.1)]">
 						<Image
-							src="https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto,f_auto/v1775212804/imports-and-exports_sp1v56.jpg"
+							src="https://res.cloudinary.com/drhzztyoc/image/upload/v1778164041/imports-and-exports_sp1v56_afogzf.jpg"
 							alt="About BRK Traders"
 							width={800}
 							height={600}

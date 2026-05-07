@@ -7,17 +7,17 @@ const SERVICES = [
 	{
 		title: "Trading Services",
 		desc: "Wide-ranging trade of goods and commodities across industries.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213266/1745573173_3119d9018925501f07d4_xaybij.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164135/1745573173_3119d9018925501f07d4_xaybij_bviwns.jpg",
 	},
 	{
 		title: "Sourcing & Procurement",
 		desc: "Finding reliable suppliers and securing competitive pricing.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775213293/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4.png",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164199/b06c7056-12c2-4dc7-9417-697f3d66e09b_fkmyx4_lmuomb.jpg",
 	},
 	{
 		title: "Import & Export",
 		desc: "Seamless coordination for international trade operations.",
-		img: "https://res.cloudinary.com/dgulr1hgd/image/upload/q_auto/f_auto/v1775212804/imports-and-exports_sp1v56.jpg",
+		img: "https://res.cloudinary.com/drhzztyoc/image/upload/v1778164041/imports-and-exports_sp1v56_afogzf.jpg",
 	},
 ];
 
