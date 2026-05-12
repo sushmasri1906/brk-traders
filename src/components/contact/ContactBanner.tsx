@@ -9,7 +9,7 @@ export default function ContactBanner() {
 			image="https://res.cloudinary.com/drhzztyoc/image/upload/v1778163704/premium_photo-1661964050170-b9e54345217d_tbmw25_qeivwj.jpg"
 			primaryBtn={{
 				label: "Send Message",
-				href: "/contact#form",
+				href: "/contact",
 			}}
 			secondaryBtn={{
 				label: "Our Services",
